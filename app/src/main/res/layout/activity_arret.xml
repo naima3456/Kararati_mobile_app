@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".arretActivity"
+    android:orientation="vertical"
+    android:scrollbars="vertical"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".arretActivity"
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layoutDirection="rtl"
+            android:layout_marginTop="10dp">
+            <Button
+                android:id="@+id/shareBtn"
+                android:layout_width="40dp"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                app:icon="@drawable/share"
+                android:backgroundTint="@color/trans"
+                android:gravity="center">
+            </Button>
+            <Button
+                android:id="@+id/shareBtnMsg"
+                android:layout_width="40dp"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                app:icon="@drawable/message"
+                android:backgroundTint="@color/trans"
+                android:gravity="center">
+            </Button>
+<!--            <ImageView-->
+<!--                android:id="@+id/archivedButton"-->
+<!--                android:layout_width="40dp"-->
+<!--                android:layout_marginRight="5dp"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                style="@style/Widget.MaterialComponents.Button.TextButton"-->
+<!--                app:srcCompat="@drawable/favarret"-->
+<!--                tools:ignore="ContentDescription"-->
+<!--                android:gravity="center">-->
+<!--            </ImageView>-->
+        </LinearLayout>
+        <View
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/purple_700" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layoutDirection="rtl">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/testtt_msg">
+
+            </TextView>
+            <TextView
+                android:id="@+id/textView"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="القرار رقم  "
+                android:textSize="20dp"
+                android:textDirection="rtl"
+                tools:layout_editor_absoluteX="327dp"
+                tools:layout_editor_absoluteY="45dp" />
+
+            <TextView
+                android:id="@+id/num_decision"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:textDirection="rtl"
+                android:gravity="right"
+                android:textSize="20dp"
+                tools:layout_editor_absoluteX="327dp"
+                tools:layout_editor_absoluteY="45dp"
+                android:textColor="@color/purple_700"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl">
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="الصادر عن  "
+                android:textSize="20dp"
+                android:textDirection="rtl"
+                tools:layout_editor_absoluteX="327dp"
+                tools:layout_editor_absoluteY="45dp" />
+
+            <TextView
+                android:id="@+id/chambre_decision"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:textDirection="rtl"
+                android:gravity="right"
+                android:textSize="20dp"
+                tools:layout_editor_absoluteX="327dp"
+                tools:layout_editor_absoluteY="45dp"
+                android:textColor="@color/purple_700"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layoutDirection="rtl">
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" بتاريخ  "
+                android:textDirection="rtl"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                tools:layout_editor_absoluteX="327dp"
+                tools:layout_editor_absoluteY="45dp" />
+
+            <TextView
+                android:id="@+id/date_decision"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:textDirection="rtl"
+                android:gravity="right"
+                android:textSize="20dp"
+                tools:layout_editor_absoluteX="327dp"
+                tools:layout_editor_absoluteY="45dp"
+                android:textColor="@color/purple_700"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layoutDirection="rtl">
+
+
+            <TextView
+                android:id="@+id/chambre_decision_2"
+                android:layout_width="150dp"
+                android:textColor="@color/purple_200"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="10dp"
+                android:text=" "
+                android:gravity="center"
+                android:textDirection="rtl"
+                tools:layout_editor_absoluteX="327dp"
+                tools:layout_editor_absoluteY="45dp"
+                android:background="@drawable/my_border"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/reference_decision"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/purple_200"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="10dp"
+                android:text=" "
+                android:gravity="center"
+                android:textDirection="rtl"
+                tools:layout_editor_absoluteX="327dp"
+                tools:layout_editor_absoluteY="45dp"
+                android:background="@drawable/my_border"
+                android:textAlignment="center" />
+        </LinearLayout>
+        <View
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/purple_700" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layoutDirection="rtl">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="أطراف القضية : "
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textDirection="rtl"
+                tools:layout_editor_absoluteX="327dp"
+                tools:layout_editor_absoluteY="45dp" />
+
+            <TextView
+                android:id="@+id/parties_decision"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:textSize="16dp"
+                android:textDirection="rtl"
+                android:gravity="right"
+                tools:layout_editor_absoluteX="327dp"
+                tools:layout_editor_absoluteY="45dp"
+                android:textColor="@color/purple_700"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layoutDirection="rtl">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="المرجع :  "
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textDirection="rtl"
+                tools:layout_editor_absoluteX="327dp"
+                tools:layout_editor_absoluteY="45dp" />
+
+            <TextView
+                android:id="@+id/ref_decision"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:textSize="16dp"
+                android:textDirection="rtl"
+                android:gravity="right"
+                tools:layout_editor_absoluteX="327dp"
+                tools:layout_editor_absoluteY="45dp"
+                android:textColor="@color/purple_700"/>
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:text="  رقم  "
+                android:textDirection="rtl"
+                tools:layout_editor_absoluteX="327dp"
+                tools:layout_editor_absoluteY="45dp" />
+
+            <TextView
+                android:id="@+id/num_ref_decision"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text=" "
+                android:textSize="16dp"
+                android:textColor="@color/purple_700"
+                android:textDirection="rtl"
+                tools:layout_editor_absoluteX="327dp"
+                tools:layout_editor_absoluteY="45dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layoutDirection="rtl">
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:text="لسنة "
+                android:textDirection="rtl"
+                tools:layout_editor_absoluteX="327dp"
+                tools:layout_editor_absoluteY="45dp" />
+
+            <TextView
+                android:id="@+id/annee_decision"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:textDirection="rtl"
+                android:textSize="16dp"
+                android:gravity="right"
+                tools:layout_editor_absoluteX="327dp"
+                tools:layout_editor_absoluteY="45dp"
+                android:textColor="@color/purple_700"/>
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layoutDirection="rtl">
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="الصفحة: "
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textDirection="rtl"
+                tools:layout_editor_absoluteX="327dp"
+                tools:layout_editor_absoluteY="45dp" />
+
+            <TextView
+                android:id="@+id/numP_ref_decision"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:textSize="16dp"
+                android:textDirection="rtl"
+                android:gravity="right"
+                tools:layout_editor_absoluteX="327dp"
+                tools:layout_editor_absoluteY="45dp"
+                android:textColor="@color/purple_700"/>
+        </LinearLayout>
+        <View
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/purple_700" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layoutDirection="rtl">
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+
+                android:text=" المبدأ: "
+                android:textColor="@color/purple_700"
+                android:textSize="20dp"
+                android:textDirection="rtl"
+                tools:layout_editor_absoluteX="327dp"
+                tools:layout_editor_absoluteY="45dp" />
+            <TextView
+                android:layout_margin="10dp"
+                android:id="@+id/principe_decision"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:text=" "
+                android:textDirection="rtl"
+                android:gravity="right"
+                tools:layout_editor_absoluteX="327dp"
+                tools:layout_editor_absoluteY="45dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/purple_700" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layoutDirection="rtl">
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text=" القرار: "
+                android:textColor="@color/purple_700"
+                android:textSize="20dp"
+                android:textDirection="rtl"
+                tools:layout_editor_absoluteX="327dp"
+                tools:layout_editor_absoluteY="45dp" />
+
+            <TextView
+                android:layout_margin="10dp"
+                android:id="@+id/decision_t"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:textDirection="rtl"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:gravity="right"
+                tools:layout_editor_absoluteX="327dp"
+                tools:layout_editor_absoluteY="45dp" />
+        </LinearLayout>
+        <View
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/purple_700" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layoutDirection="rtl">
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/purple_700"
+                android:textSize="20dp"
+                android:text=" منطوق القرار: "
+                android:textDirection="rtl"
+                tools:layout_editor_absoluteX="327dp"
+                tools:layout_editor_absoluteY="45dp" />
+
+            <TextView
+                android:layout_margin="10dp"
+                android:id="@+id/decisionOp_t"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textDirection="rtl"
+                android:gravity="right"
+                tools:layout_editor_absoluteX="327dp"
+                tools:layout_editor_absoluteY="45dp" />
+        </LinearLayout>
+        <View
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/purple_700" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layoutDirection="rtl">
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/purple_700"
+                android:textSize="20dp"
+                android:text=" تشكيلة المجلس:   "
+                android:textDirection="rtl"
+                tools:layout_editor_absoluteX="327dp"
+                tools:layout_editor_absoluteY="45dp" />
+
+            <TextView
+                android:layout_margin="10dp"
+                android:id="@+id/composition_t"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textDirection="rtl"
+                android:gravity="right"
+                tools:layout_editor_absoluteX="327dp"
+                tools:layout_editor_absoluteY="45dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

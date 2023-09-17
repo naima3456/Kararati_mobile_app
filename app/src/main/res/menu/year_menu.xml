@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/noYear"
+        android:title="@string/no_year"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/year2003"
+        android:title="@string/_2003"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/year2002"
+        android:title="@string/_2002"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/year2001"
+        android:title="@string/_2001"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/year2000"
+        android:title="@string/_2000"
+        app:showAsAction="never"/>
+
+
+</menu>

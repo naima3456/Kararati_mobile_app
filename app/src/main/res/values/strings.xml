@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">قراراتي</string>
+    <string name="buttonname">
+        <u>إعدادات قاعدة البيانات</u>
+    </string>
+
+    <string name="empty_text">خالي</string>
+
+    <!-- ======================================== -->
+    <string name="no_room">الغرف</string>
+    <string name="arrets_room">الغرفة القضائية</string>
+    <string name="civil_room">الغرفة المدنية</string>
+    <string name="marine_room">الغرفة التجارية و البحرية</string>
+    <string name="state_room">مجلس الدولة</string>
+    <string name="offense_room">غرفة الجنح و المخالفات</string>
+    <!-- ======================================== -->
+    <string name="no_year">السنة</string>
+    <string name="_2003">2003</string>
+    <string name="_2002">2002</string>
+    <string name="_2001">2001</string>
+    <string name="_2000">2000</string>
+    <!-- ======================================== -->
+    <string name="no_source">المصدر</string>
+    <string name="justice_source">المجلة القضائية</string>
+    <string name="newspaper_source">نشرة القضاة</string>
+    <string name="arret_number_text">القرار رقم:</string>
+    <string name="_0"/>
+    <string name="arret_source_text">الصادر عن:</string>
+    <string name="_space"/>
+    <string name="arret_date_text">بتاريخ:</string>
+
+    <!--    <string-array name="choicebox1">-->
+<!--        <item>الغرفة المدنية</item>-->
+<!--        <item> الغرفة التجارية و البحرية</item>-->
+<!--        <item> مجلس الدولة</item>-->
+<!--        <item> غرفة الجنح و المخالفات</item>-->
+
+
+<!--    </string-array>-->
+</resources>

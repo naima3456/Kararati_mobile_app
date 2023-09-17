@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    tools:context=".Arretslist">
+
+
+    <SearchView
+        android:id="@+id/search_bar"
+        android:layout_width="350dp"
+        android:layout_height="48dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/searchbar"
+        android:iconifiedByDefault="false"
+        android:queryBackground="@color/trans"
+        android:queryHint="ابحث عن قرار"
+        android:searchIcon="@drawable/searchicon"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout01"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout02"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search_bar">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/roomChoicesBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:padding="8dp"
+            app:cornerRadius="10dp"
+            android:text="@string/no_room"
+            app:backgroundTint="?attr/colorPrimaryVariant"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/yearChoicesBtn"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/yearChoicesBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:padding="8dp"
+            android:text="@string/no_year"
+            app:backgroundTint="?attr/colorPrimaryVariant"
+            app:cornerRadius="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/sourceChoicesBtn"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toEndOf="@+id/roomChoicesBtn"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/sourceChoicesBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:padding="8dp"
+            android:text="@string/no_source"
+            android:visibility="visible"
+            app:backgroundTint="?attr/colorPrimaryVariant"
+            app:cornerRadius="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/yearChoicesBtn"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+<!--    <com.google.android.material.textfield.TextInputLayout-->
+<!--        android:id="@+id/choicebox1"-->
+<!--        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"-->
+<!--        android:layout_width="100dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/search_bar"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:layout_marginEnd="8dp"-->
+<!--        android:layout_marginBottom="4dp"-->
+<!--        app:endIconTint="@color/bg"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"-->
+<!--        app:layout_constraintEnd_toStartOf="@+id/choicebox2"-->
+<!--        app:layout_constraintHorizontal_chainStyle="spread"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/search_bar">-->
+
+<!--        <AutoCompleteTextView-->
+<!--            android:id="@+id/choiceboxcontent1"-->
+<!--            android:layout_width="100dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_marginBottom="2dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:background="@drawable/choicebox"-->
+<!--            android:inputType="none"-->
+<!--            android:text="الغرفة القضائية"-->
+<!--            android:textAlignment="center"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="10sp" />-->
+
+<!--    </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--    <com.google.android.material.textfield.TextInputLayout-->
+<!--        android:id="@+id/choicebox2"-->
+<!--        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"-->
+<!--        android:layout_width="100dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/search_bar"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginStart="8dp"-->
+<!--        android:layout_marginEnd="8dp"-->
+<!--        android:visibility="invisible"-->
+<!--        app:endIconTint="@color/bg"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/choiceboxcontent1"-->
+<!--        app:layout_constraintEnd_toStartOf="@+id/choicebox3"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/choiceboxcontent1"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/choiceboxcontent1">-->
+
+<!--        <AutoCompleteTextView-->
+<!--            android:id="@+id/choiceboxcontent2"-->
+<!--            android:layout_width="100dp"-->
+<!--            android:layout_height="62dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:background="@drawable/choicebox"-->
+<!--            android:inputType="none"-->
+<!--            android:text="سنة المصدر"-->
+<!--            android:textAlignment="center"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="10sp" />-->
+
+<!--    </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--    <com.google.android.material.textfield.TextInputLayout-->
+<!--        android:id="@+id/choicebox3"-->
+<!--        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"-->
+<!--        android:layout_width="100dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/search_bar"-->
+<!--        android:layout_marginStart="8dp"-->
+<!--        android:visibility="invisible"-->
+<!--        app:endIconTint="@color/bg"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/choicebox2"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/choicebox2"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/choicebox2">-->
+
+<!--        <AutoCompleteTextView-->
+<!--            android:id="@+id/choiceboxcontent3"-->
+<!--            android:layout_width="100dp"-->
+<!--            android:layout_height="61dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:background="@drawable/choicebox"-->
+<!--            android:inputType="none"-->
+<!--            android:text="المصدر"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="10sp" />-->
+
+<!--    </com.google.android.material.textfield.TextInputLayout>-->
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout02"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomnavigationview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout01">
+
+        <TextView
+            android:id="@+id/emptyText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/empty_text"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/arretsList"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+
+
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:listitem="@layout/list_item">
+
+        </androidx.recyclerview.widget.RecyclerView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+
+        android:id="@+id/bottomnavigationview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:labelVisibilityMode="selected"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout02"
+        app:menu="@menu/bottom_nav">
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
